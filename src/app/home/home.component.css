@@ -1,0 +1,36 @@
+.card-body{
+    text-align: center;
+    background-color:snow
+}
+.center {
+  display: flex;
+  justify-content: center;
+
+}
+.glow-btn {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  background-color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #fff;
+  transition: box-shadow 0.5s ease;
+
+}
+
+.glow-btn {
+  animation: glowbtn 1s ease-in-out infinite alternate;
+  box-shadow: 0 0 20px #fff;
+}
+
+@keyframes glowbtn {
+  from {
+    box-shadow: 0 0 10px #06e9ed;
+  }
+  to {
+    box-shadow: 0 0 20px #06e9ed;
+  }
+}

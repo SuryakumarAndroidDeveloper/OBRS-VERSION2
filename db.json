@@ -1,0 +1,56 @@
+{
+  "user": [
+    {
+      "userid": 1234,
+      "name": "Surya",
+      "email": "surya@gmail.com",
+      "password": "Surya@123",
+      "cpassword": "Surya@123",
+      "contactno": 8764567876,
+      "id": 1
+    },
+    {
+      "userid": 123,
+      "name": "Surya Kumar R",
+      "email": "surya@gmail.com",
+      "password": "Surya@123",
+      "cpassword": "Surya@123",
+      "contactno": 2876438723,
+      "id": 2
+    },
+    {
+      "userid": 345,
+      "name": "sury",
+      "email": "surya@gmail.com",
+      "password": "Surya@123",
+      "cpassword": "Surya@123",
+      "contactno": 3243434545,
+      "id": 3
+    }
+  ],
+  "update": [],
+  "booking": [
+    {
+      "BusName": "surya kumar",
+      "Departure": "Kiruthiga",
+      "BusNumber": "SuryaKiru-143",
+      "Source": "love",
+      "Destination": "love",
+      "Fare": "0",
+      "CoachType": "Love & Arrange",
+      "SeatsAvailable": 143,
+      "id": 1
+    }
+  ],
+  "admin": [
+    {
+      "userid": 9812,
+      "name": "Surya Kumar R",
+      "email": "surya@gmail.com",
+      "password": "Admin@9812",
+      "cpassword": "Admin@9812",
+      "contactno": 2876438723,
+      "id": 1
+    }
+  ]
+}

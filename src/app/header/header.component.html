@@ -1,0 +1,60 @@
+<div class="glow-text" *ngIf="!isUserLogin && !isAdminLogin">Online Bus Reservation System
+  <div class="typewriter">
+    <h6>Safe and LowCost Booking Website..</h6>
+  </div>
+</div>
+
+<nav class="navbar navbar-expand-md navbar-light bg-light" *ngIf="!isUserLogin && !isAdminLogin">
+    <a class="navbar-brand" routerLink="/" *ngIf="!isUserLogin && !isAdminLogin">
+        <img
+            src="assets/img/buslogo.png" height="60px" width="80px">
+    </a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+        aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active"*ngIf="!isUserLogin && !isAdminLogin ">
+                <a class="nav-link" ><b>OBRS</b> </a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item active" *ngIf="!isUserLogin && !isAdminLogin">
+            <a class="nav-link" routerLink="aboutus"><b>About Us</b> </a>
+        </li>
+
+            <li class="nav-item active" *ngIf="!isUserLogin && !isAdminLogin">
+                <a class="nav-link" routerLink="login"><b>Login</b> </a>
+            </li>
+
+        </ul>
+      </div>
+    </nav>
+
+
+     <nav  class="navbar navbar-expand-md navbar-light bg-light" *ngIf="isUserLogin && !isAdminLogin">
+      <a class="navbar-brand" routerLink="/obrs" *ngIf="isUserLogin && !isAdminLogin">Welcome
+
+    </a>
+
+      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+        <li id="hover1" class="nav-item active" routerLinkActive="active" *ngIf="isUserLogin && !isAdminLogin"><a class="nav-link" routerLink="/obrs" >Contact Us</a></li>
+        <li id="hover1" class="nav-item active" routerLinkActive="active" *ngIf="isUserLogin && !isAdminLogin"><a class="nav-link" routerLink="/obrs">Print Ticket</a></li>
+        <li id="hover1" class="nav-item active" routerLinkActive="active" *ngIf="isUserLogin&& !isAdminLogin"><a class="nav-link" routerLink="/obrs">Profile</a></li>
+      </ul>
+    </nav>
+
+
+    <nav  class="navbar navbar-expand-md navbar-light bg-light" *ngIf="isAdminLogin && !isUserLogin">
+      <a class="navbar-brand" routerLink="/addbus" *ngIf="isAdminLogin && !isUserLogin">Welcome Admin!
+    </a>
+
+      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+        <li id="hover1" class="nav-item active" routerLinkActive="active" *ngIf="isAdminLogin && !isUserLogin"><a class="nav-link" routerLink="/addbus" >UPDATE BUS</a></li>
+        <li id="hover1" class="nav-item active" routerLinkActive="active" *ngIf="isAdminLogin && !isUserLogin"><a class="nav-link" routerLink="/obrs">DELETE BUS</a></li>
+        <li id="hover1" class="nav-item active" routerLinkActive="active" *ngIf="isAdminLogin && !isUserLogin"><a class="nav-link" routerLink="/obrs">VIEW BUS</a></li>
+      </ul>
+    </nav>
+
+
+
+
