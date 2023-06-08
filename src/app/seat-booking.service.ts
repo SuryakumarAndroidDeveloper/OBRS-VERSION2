@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { GenerateTicketService } from './generate-ticket.service';
 import { Bus } from './interfaces/bus';
-import * as data from "../assets/json/buses.json";
+import * as data from "../../buses.json";
 @Injectable({
   providedIn: 'root'
 })
@@ -56,7 +56,7 @@ export class SeatBookingService {
   updateBusInfo(){
     const busIndex = this.buses.findIndex(element => element.id == this.journey.busId )
     if(this.buses[busIndex].bookings[this.journey.departureDate])
-        var bookedStatus = [...this.buses[busIndex].bookings[this.journey.departureDate]];
+        var bookedStatus = [this.buses[busIndex].bookings[this.journey.departureDate]];
     else
         var bookedStatus = new Array(36).fill(false);
     for( var i of this.journey.selectedSeats){

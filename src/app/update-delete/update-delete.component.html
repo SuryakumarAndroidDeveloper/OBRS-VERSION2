@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Available Buses</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    </div>
+</nav>
+<table class="table table-striped">
+<thead>
+  <tr>
+      <th>Id</th>
+      <th>Bus Name </th>
+      <th>Departure </th>
+      <th>Bus Number</th>
+      <th>Source</th>
+      <th>Destination </th>
+      <th>Fare</th>
+     <th>Coach Type </th>
+      <th>Seat Available</th>
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let student of allstudent">
+      <td>{{student.id}}</td>
+      <td>{{student.busname}}</td>
+      <td>{{student.departure}}</td>
+      <td>{{student.source}}</td>
+      <td>{{student.destination}}</td>
+      <td>{{student.fare}}</td>
+      <td>{{student.coach}}</td>
+      <td>{{student.seats}}</td>
+      <td>
+          <input type="button" value="Edit" (click)="EditStudent(student)" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-success me-2"/>
+          <input type="button" value="Delete" (click)="DeleteStudent(student)" class="btn btn-danger"/>
+      </td>
+  </tr>
+</tbody>
+</table>
+
+
+
+

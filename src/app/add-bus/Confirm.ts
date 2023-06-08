@@ -6,10 +6,11 @@ import { FormGroup } from '@angular/forms';
     const Destination=formgroup.controls[mcn];
 
     if(Source.value!=Destination.value){
-      Destination.setErrors({ConfirmValidator:true})
+     return true
 
     }else{
-      Destination.setErrors(null);
+      Destination.setErrors({ConfirmValidator:true});
+
     }
 
   }

@@ -21,12 +21,14 @@ import { ViewTicketComponent } from './view-ticket/view-ticket.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { AddBusComponent } from './add-bus/add-bus.component';
 import { TermsConditionComponent } from './terms-condition/terms-condition.component';
+import { UpdateDeleteComponent } from './update-delete/update-delete.component';
+
 
 
 
 
 @NgModule({
-  declarations: [		
+  declarations: [
     AppComponent,
     HeaderComponent,
     RegisterComponent,
@@ -44,7 +46,9 @@ import { TermsConditionComponent } from './terms-condition/terms-condition.compo
       NotFoundComponent,
       SeatnamePipe,
       AddBusComponent,
-      TermsConditionComponent
+      TermsConditionComponent,
+      UpdateDeleteComponent,
+
    ],
   imports: [
     BrowserModule,

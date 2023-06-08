@@ -12,6 +12,7 @@ import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
 import { AboutusComponent } from './Aboutus/Aboutus.component';
 import { AddBusComponent } from './add-bus/add-bus.component';
+import { UpdateDeleteComponent } from './update-delete/update-delete.component';
 
 
 
@@ -28,6 +29,7 @@ const routes: Routes = [
   {path: 'viewticket/:id', component: ViewTicketComponent},
   {path: 'notfound', component: NotFoundComponent},
   {path: 'addbus', component: AddBusComponent},
+  {path: 'updatedelete', component:UpdateDeleteComponent},
   {path: '**', component: NotFoundComponent}
 
 

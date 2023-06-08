@@ -10,13 +10,13 @@
           <form [formGroup]="passengerInfo" (ngSubmit)="onFormSubmit()">
 
               <div class="form-group row">
-                  <label for="username" class="col-sm-3 col-form-label">User Name</label>
+                  <label for="username" class="col-sm-3 col-form-label">Passenger Name</label>
                   <div class="col">
                       <input type="text" class="form-control" id="username" name="username" formControlName="username">
                       <div *ngIf="formControl.username.invalid && (formControl.username.dirty || formControl.username.touched || submitted)" class="text-danger">
-                          <small *ngIf="formControl.username.errors?.required">User Name is required</small>
-                          <small *ngIf="formControl.username.errors?.minlength">User Name must be atleast 3 characters long.</small>
-                          <small *ngIf="formControl.username.errors?.maxlength">User Name can not have more than 20 characters</small>
+                          <small *ngIf="formControl.username.errors?.required">Passenger Name is required</small>
+                          <small *ngIf="formControl.username.errors?.minlength">Passenger Name must be atleast 3 characters long.</small>
+                          <small *ngIf="formControl.username.errors?.maxlength">Passenger Name can not have more than 20 characters</small>
                       </div>
                   </div>
               </div>

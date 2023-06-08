@@ -26,22 +26,18 @@
       "cpassword": "Surya@123",
       "contactno": 3243434545,
       "id": 3
-    }
-  ],
-  "update": [],
-  "booking": [
+    },
     {
-      "BusName": "surya kumar",
-      "Departure": "Kiruthiga",
-      "BusNumber": "SuryaKiru-143",
-      "Source": "love",
-      "Destination": "love",
-      "Fare": "0",
-      "CoachType": "Love & Arrange",
-      "SeatsAvailable": 143,
-      "id": 1
+      "userid": 143,
+      "name": "jaga",
+      "email": "surya@gmail.com",
+      "password": "Surya@123",
+      "cpassword": "Surya@123",
+      "contactno": 6892345678,
+      "id": 4
     }
   ],
+  "booking": [],
   "admin": [
     {
       "userid": 9812,

@@ -27,7 +27,7 @@ export class AddBusComponent implements OnInit {
       CoachType:['',[Validators.required]],
       SeatsAvailable:['',[Validators.required]],
 
-    },{validator:Confirm('Source','Destination')}
+    }//,{validator:Confirm('Source','Destination')}
     )
 
   }

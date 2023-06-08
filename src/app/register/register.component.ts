@@ -18,6 +18,7 @@ export class RegisterComponent implements OnInit {
   constructor(private formBuilder:FormBuilder,private http:HttpClient,private router: Router){
 
   }
+
   ngOnInit(): void {
     this.registerForm=this.formBuilder.group({
       userid:['',[Validators.required,Validators.minLength(4)]],
